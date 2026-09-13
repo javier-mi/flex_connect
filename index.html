@@ -295,11 +295,11 @@
   <!-- MAIN -->
   <main class="main">
 
-    <!-- ===================== VISTA 1: CALENDARIO CONSOLIDADO ===================== -->
+    <!-- ===================== VISTA 1: CALENDARIO ===================== -->
     <section class="view active" id="view-calendar">
       <div class="page-head">
         <div>
-          <h2>Calendario consolidado</h2>
+          <h2>Calendario</h2>
           <div class="sub">Todas tus propiedades, un solo vistazo</div>
         </div>
         <button class="btn" onclick="openReserveModal()">+ Reservar días</button>
@@ -506,7 +506,7 @@ function updateFilterCounts(){
   document.getElementById('originFilterCount').textContent = origins.length<2 ? `(${origins.length})` : '';
 }
 
-/* ============ CALENDARIO CONSOLIDADO ============ */
+/* ============ CALENDARIO ============ */
 function changeMonth(delta){
   viewMonth += delta;
   if(viewMonth<0){viewMonth=11; viewYear--;}
